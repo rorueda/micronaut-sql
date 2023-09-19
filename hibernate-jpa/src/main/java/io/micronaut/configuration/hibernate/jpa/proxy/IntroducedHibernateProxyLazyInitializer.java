@@ -43,4 +43,8 @@ final class IntroducedHibernateProxyLazyInitializer extends AbstractLazyInitiali
         return persistentClass;
     }
 
+    @Override
+    public Class<?> getImplementationClass() {
+        return persistentClass;
+    }
 }
